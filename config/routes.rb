@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     namespace :v1 do
+      get 'home' => "home#index"
     end
   end
 
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
     namespace :v1 do
     end
   end
+
 end
